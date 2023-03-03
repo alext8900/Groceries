@@ -1,0 +1,11 @@
+# Xcode build files
+/build/
+*.pbxuser
+*.mode1v3
+
+# macOS files
+.DS_Store
+
+# Swift Package Manager files
+/Packages/
+*.xcodeproj
