@@ -1,0 +1,76 @@
+{
+  "groceryItems": [
+    {
+      "id": "1",
+      "image": "watermelon",
+      "name": "Watermelon",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "2",
+      "image": "apple",
+      "name": "Apples",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "3",
+      "image": "whitebread",
+      "name": "White Bread",
+      "groceryCategory": "Bakery"
+    },
+    {
+      "id": "4",
+      "image": "blueberry",
+      "name": "Blueberry",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "5",
+      "image": "cherry",
+      "name": "Cherry",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "6",
+      "image": "gooseberry",
+      "name": "Gooseberry",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "7",
+      "image": "lemon",
+      "name": "Lemons",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "8",
+      "image": "lime",
+      "name": "Lime",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "9",
+      "image": "mango",
+      "name": "Mango",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "10",
+      "image": "pear",
+      "name": "Pear",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "11",
+      "image": "strawberry",
+      "name": "Strawberry",
+      "groceryCategory": "Produce"
+    },
+    {
+      "id": "12",
+      "image": "fruitloops",
+      "name": "Cereal",
+      "groceryCategory": "Snacks"
+    }
+  ]
+}
