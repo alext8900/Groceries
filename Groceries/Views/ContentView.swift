@@ -11,17 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             CustomNavBar()
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    CategoryItemView(categoryImage: "blueberry", categoryName: "Fruits", action: {print("button tapped")})
-                    CategoryItemView(categoryImage: "corn", categoryName: "Veggies", action: {print("button tapped")})
-                    CategoryItemView(categoryImage: "whitebread", categoryName: "Bakery", action: {print("button tapped")})
-                    CategoryItemView(categoryImage: "mango", categoryName: "Meat", action: {print("button tapped")})
-                    CategoryItemView(categoryImage: "cherry", categoryName: "Fish", action: {print("button tapped")})
-                }
-                .padding(.horizontal)
-            }
+            CategoryGridView(categoryItem: groceryCategories)
             Spacer()
             GroceryGridView()
 
