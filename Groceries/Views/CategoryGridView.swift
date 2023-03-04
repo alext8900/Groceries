@@ -10,16 +10,16 @@ import SwiftUI
 
 
 struct CategoryGridView: View {
-    @State private var selectedCategory: GroceryCategory?
+    @Binding var selectedCategory: GroceryCategory?
     let categoryItem: [GroceryCategory]
-    func print() {
-        
-    }
+ 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [GridItem(.fixed(30), spacing: 16)], spacing: 16) {
                 ForEach(categoryItem) { category in
-                    CategoryItemView(categoryImage: category.image, categoryName: category.name, action: print, selectedCategory: $selectedCategory)
+                    CategoryItemView(categoryImage: category.image, categoryName: category.name, action: {
+                        selectedCategory = category.self
+                    }, selectedCategory: $selectedCategory)
                 }
             }
             .padding(.horizontal)
@@ -29,8 +29,9 @@ struct CategoryGridView: View {
 }
 
 struct CategoryGridView_Previews: PreviewProvider {
+    @State static var selectedCategory: GroceryCategory?
     static var previews: some View {
-        CategoryGridView(categoryItem: groceryCategories)
+        CategoryGridView(selectedCategory: $selectedCategory, categoryItem: groceryCategories)
             .previewLayout(.sizeThatFits)
     }
 }

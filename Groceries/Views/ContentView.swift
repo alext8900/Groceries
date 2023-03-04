@@ -13,8 +13,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             CustomNavBar()
-            CategoryGridView(categoryItem: groceryCategories)
-            GroceryGridView(groceryItems: ContentView.groceryItems, selectedCategory: selectedCategory?.name ?? "Produce")
+            CategoryGridView(selectedCategory: $selectedCategory, categoryItem: groceryCategories)
+            GroceryGridView(groceryItems: ContentView.groceryItems, selectedCategory: selectedCategory)
 
         }
         .navigationBarTitle("")

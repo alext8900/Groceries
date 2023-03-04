@@ -16,7 +16,8 @@ struct CategoryItemView: View {
     
     var body: some View {
         Button(action: {
-            selectedCategory = GroceryCategory(id: "1", name: categoryName, image: categoryImage)
+            self.selectedCategory = GroceryCategory(id: "3", name: categoryName, image: categoryImage)
+            print(categoryName)
         }) {
             HStack(spacing: 8) {
                 Image(categoryImage)
@@ -38,10 +39,12 @@ struct CategoryItemView: View {
     }
 }
 
-struct CategoryItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryItemView(categoryImage: "strawberry", categoryName: "Fruits", action: {print("Button Tapped")}, selectedCategory: .constant(GroceryCategory(id: "1", name: "Produce", image: "strawberry")))
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
-}
+//struct CategoryItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CategoryItemView(categoryImage: "Apple", categoryName: "Produce", action: {
+//            
+//        }, selectedCategory: .constant("Produce"))
+//            .previewLayout(.sizeThatFits)
+//            .padding()
+//    }
+//}

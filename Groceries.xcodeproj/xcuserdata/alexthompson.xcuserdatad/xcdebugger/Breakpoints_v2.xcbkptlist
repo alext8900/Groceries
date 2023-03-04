@@ -20,5 +20,53 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBFBFDBA-D949-4577-AF7B-64852C5BA6F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Groceries/Views/CategoryItemView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "CBFBFDBA-D949-4577-AF7B-64852C5BA6F2 - 9642da984ca055fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Groceries.CategoryItemView.body.getter : some"
+                  moduleName = "Groceries"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexthompson/Development/Groceries/Groceries/Views/CategoryItemView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "CBFBFDBA-D949-4577-AF7B-64852C5BA6F2 - bac9a14c4186e6b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Groceries.CategoryItemView.body.getter : some"
+                  moduleName = "Groceries"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexthompson/Development/Groceries/Groceries/Views/CategoryItemView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

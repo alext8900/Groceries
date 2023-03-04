@@ -12,15 +12,15 @@ import Combine
 
 struct GroceryGridView: View {
     let groceryItems: [GroceryItem]
-    public var selectedCategory = "Produce"
+    @State var selectedCategory: GroceryCategory?
 
     @ObservedObject var viewModel = GroceryViewModel()
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
+        return ScrollView(showsIndicators: false) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 30) {
-                ForEach(viewModel.groceryItems.filter { $0.groceryCategory == selectedCategory }) { item in
-                    GroceryItemView(groceryItem: GroceryItem(id: item.id, name: item.name, image: item.image, groceryCategory: item.groceryCategory), diameter: 125)
+                ForEach(groceryItems.filter { $0.groceryCategory == selectedCategory?.name }) { item in
+                    GroceryItemView(groceryItem: item, diameter: 125)
                 }
             }
             .padding(7)
