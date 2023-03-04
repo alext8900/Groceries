@@ -14,11 +14,11 @@ struct ContentView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
-                    CategoryView(categoryImage: "blueberry", categoryName: "Fruits", action: {print("button tapped")})
-                    CategoryView(categoryImage: "corn", categoryName: "Veggies", action: {print("button tapped")})
-                    CategoryView(categoryImage: "whitebread", categoryName: "Bakery", action: {print("button tapped")})
-                    CategoryView(categoryImage: "mango", categoryName: "Meat", action: {print("button tapped")})
-                    CategoryView(categoryImage: "cherry", categoryName: "Fish", action: {print("button tapped")})
+                    CategoryItemView(categoryImage: "blueberry", categoryName: "Fruits", action: {print("button tapped")})
+                    CategoryItemView(categoryImage: "corn", categoryName: "Veggies", action: {print("button tapped")})
+                    CategoryItemView(categoryImage: "whitebread", categoryName: "Bakery", action: {print("button tapped")})
+                    CategoryItemView(categoryImage: "mango", categoryName: "Meat", action: {print("button tapped")})
+                    CategoryItemView(categoryImage: "cherry", categoryName: "Fish", action: {print("button tapped")})
                 }
                 .padding(.horizontal)
             }

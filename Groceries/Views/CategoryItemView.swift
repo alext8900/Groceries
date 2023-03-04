@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryView: View {
+struct CategoryItemView: View {
     let categoryImage: String
     let categoryName: String
     let action: () -> Void
@@ -34,9 +34,9 @@ struct CategoryView: View {
     }
 }
 
-struct CategoryView_Previews: PreviewProvider {
+struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView(categoryImage: "strawberry", categoryName: "Fruits", action: {print("Button Tapped")})
+        CategoryItemView(categoryImage: "strawberry", categoryName: "Fruits", action: {print("Button Tapped")})
             .previewLayout(.sizeThatFits)
             .padding()
     }

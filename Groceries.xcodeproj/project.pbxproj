@@ -14,7 +14,7 @@
 		D5773F2629B2AB29000FB8A2 /* groceryItems.json in Resources */ = {isa = PBXBuildFile; fileRef = D5773F2529B2AB29000FB8A2 /* groceryItems.json */; };
 		D5773F2829B2AB40000FB8A2 /* GroceryCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2729B2AB40000FB8A2 /* GroceryCategories.swift */; };
 		D5773F2A29B2AB55000FB8A2 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2929B2AB55000FB8A2 /* CustomNavBar.swift */; };
-		D5773F2C29B2AB96000FB8A2 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2B29B2AB96000FB8A2 /* CategoryView.swift */; };
+		D5773F2C29B2AB96000FB8A2 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2B29B2AB96000FB8A2 /* CategoryItemView.swift */; };
 		D5773F2E29B2ABCC000FB8A2 /* GroceryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */; };
 		D5773F3729B2B9F4000FB8A2 /* GroceryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3629B2B9F4000FB8A2 /* GroceryViewModel.swift */; };
 		D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */; };
@@ -29,7 +29,7 @@
 		D5773F2529B2AB29000FB8A2 /* groceryItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groceryItems.json; sourceTree = "<group>"; };
 		D5773F2729B2AB40000FB8A2 /* GroceryCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryCategories.swift; sourceTree = "<group>"; };
 		D5773F2929B2AB55000FB8A2 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
-		D5773F2B29B2AB96000FB8A2 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		D5773F2B29B2AB96000FB8A2 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryGridView.swift; sourceTree = "<group>"; };
 		D5773F3629B2B9F4000FB8A2 /* GroceryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryViewModel.swift; sourceTree = "<group>"; };
 		D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */,
 				D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */,
 				D5773F2929B2AB55000FB8A2 /* CustomNavBar.swift */,
-				D5773F2B29B2AB96000FB8A2 /* CategoryView.swift */,
+				D5773F2B29B2AB96000FB8A2 /* CategoryItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				D5773F2E29B2ABCC000FB8A2 /* GroceryGridView.swift in Sources */,
 				D5773F2A29B2AB55000FB8A2 /* CustomNavBar.swift in Sources */,
 				D5773F2829B2AB40000FB8A2 /* GroceryCategories.swift in Sources */,
-				D5773F2C29B2AB96000FB8A2 /* CategoryView.swift in Sources */,
+				D5773F2C29B2AB96000FB8A2 /* CategoryItemView.swift in Sources */,
 				D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
