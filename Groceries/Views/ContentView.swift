@@ -23,7 +23,7 @@ struct ContentView: View {
                 .padding(.horizontal)
             }
             Spacer()
-            GroceryView()
+            GroceryGridView()
 
         }
         .navigationBarTitle("")
