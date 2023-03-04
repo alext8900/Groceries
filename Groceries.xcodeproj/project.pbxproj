@@ -18,6 +18,7 @@
 		D5773F2E29B2ABCC000FB8A2 /* GroceryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */; };
 		D5773F3729B2B9F4000FB8A2 /* GroceryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3629B2B9F4000FB8A2 /* GroceryViewModel.swift */; };
 		D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */; };
+		D5773F3B29B2D05E000FB8A2 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryGridView.swift; sourceTree = "<group>"; };
 		D5773F3629B2B9F4000FB8A2 /* GroceryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryViewModel.swift; sourceTree = "<group>"; };
 		D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemView.swift; sourceTree = "<group>"; };
+		D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D5773F1929B2AADD000FB8A2 /* ContentView.swift */,
+				D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */,
 				D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */,
 				D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */,
 				D5773F2929B2AB55000FB8A2 /* CustomNavBar.swift */,
@@ -189,6 +192,7 @@
 				D5773F2E29B2ABCC000FB8A2 /* GroceryGridView.swift in Sources */,
 				D5773F2A29B2AB55000FB8A2 /* CustomNavBar.swift in Sources */,
 				D5773F2829B2AB40000FB8A2 /* GroceryCategories.swift in Sources */,
+				D5773F3B29B2D05E000FB8A2 /* CategoryGridView.swift in Sources */,
 				D5773F2C29B2AB96000FB8A2 /* CategoryItemView.swift in Sources */,
 				D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */,
 			);
