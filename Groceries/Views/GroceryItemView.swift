@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct GroceryItemView: View {
-    @State var isDarkMode: Bool
     let groceryItem: GroceryItem
     let diameter: CGFloat
     
@@ -23,7 +22,7 @@ struct GroceryItemView: View {
                         .frame(width: diameter, height: diameter)
                         .overlay(
                             Circle()
-                                .stroke(colorScheme == .dark ? Color.white.opacity(0.6) : Color.black, lineWidth: 0.9)
+                                .stroke(colorScheme == .dark ? Color.white : Color.black, lineWidth: 0.9)
                                 .blur(radius: 5)
                         )
                         .shadow(
@@ -56,10 +55,10 @@ struct GroceryItemView: View {
 
 struct GroceryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryItemView(isDarkMode: false, groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
+        GroceryItemView(groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
             .previewLayout(.sizeThatFits)
             .padding()
-        GroceryItemView(isDarkMode: false, groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
+        GroceryItemView(groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
