@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    static let groceryItems: [GroceryItem] = []
+    @State var selectedCategory: GroceryCategory?
     var body: some View {
         VStack {
             CustomNavBar()
             CategoryGridView(categoryItem: groceryCategories)
-            GroceryGridView()
+            GroceryGridView(groceryItems: ContentView.groceryItems, selectedCategory: selectedCategory?.name ?? "Produce")
 
         }
         .navigationBarTitle("")

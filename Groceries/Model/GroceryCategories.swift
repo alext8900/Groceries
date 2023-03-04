@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct GroceryCategory: Identifiable {
+public struct GroceryCategory: Identifiable, Equatable {
     public let id: String
     let name: String
     let image: String
@@ -16,7 +16,7 @@ public struct GroceryCategory: Identifiable {
 
 public let groceryCategories = [
     GroceryCategory(id: "1", name: "Veggies", image: "corn"),
-    GroceryCategory(id: "2", name: "Fruits", image: "pear"),
+    GroceryCategory(id: "2", name: "Produce", image: "pear"),
     GroceryCategory(id: "3", name: "Meat", image: "cherry"),
     GroceryCategory(id: "4", name: "Fish", image: "watermelon"),
     GroceryCategory(id: "5", name: "Dairy & Eggs", image: "mango"),

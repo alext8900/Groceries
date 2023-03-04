@@ -10,9 +10,8 @@ import SwiftUI
 
 
 struct CategoryGridView: View {
-    
+    @State private var selectedCategory: GroceryCategory?
     let categoryItem: [GroceryCategory]
-
     func print() {
         
     }
@@ -20,7 +19,7 @@ struct CategoryGridView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [GridItem(.fixed(30), spacing: 16)], spacing: 16) {
                 ForEach(categoryItem) { category in
-                    CategoryItemView(categoryImage: category.image, categoryName: category.name, action: print)
+                    CategoryItemView(categoryImage: category.image, categoryName: category.name, action: print, selectedCategory: $selectedCategory)
                 }
             }
             .padding(.horizontal)
