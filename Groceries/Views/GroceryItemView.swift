@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct GroceryItemView: View {
+    @State var isDarkMode: Bool
     let groceryItem: GroceryItem
+    let diameter: CGFloat
     
     var body: some View {
         Button(action: {
@@ -17,8 +19,19 @@ struct GroceryItemView: View {
             VStack {
                 ZStack {
                     Circle()
-                        .fill(Color.gray.opacity(0.3))
-                        .frame(width: 115, height: 115)
+                        .fill(colorScheme == .dark ? Color.white.opacity(0.1) : Color.gray.opacity(0.1))
+                        .frame(width: diameter, height: diameter)
+                        .overlay(
+                            Circle()
+                                .stroke(colorScheme == .dark ? Color.white.opacity(0.6) : Color.black, lineWidth: 0.9)
+                                .blur(radius: 5)
+                        )
+                        .shadow(
+                            color: colorScheme == .dark ? Color.black.opacity(0.2) : Color.white.opacity(0.2),
+                            radius: diameter / 20,
+                            x: diameter / 20,
+                            y: diameter / 10
+                        )
                     Image(groceryItem.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -38,12 +51,16 @@ struct GroceryItemView: View {
         }
         .buttonStyle(PlainButtonStyle())
     }
+    @Environment(\.colorScheme) var colorScheme
 }
 
 struct GroceryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryItemView(groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"))
+        GroceryItemView(isDarkMode: false, groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
             .previewLayout(.sizeThatFits)
             .padding()
+        GroceryItemView(isDarkMode: false, groceryItem: GroceryItem(id: "2", name: "Apple", image: "apple", groceryCategory: "Produce"), diameter: 125)
+            .preferredColorScheme(.dark)
+            .previewLayout(.sizeThatFits)
     }
 }

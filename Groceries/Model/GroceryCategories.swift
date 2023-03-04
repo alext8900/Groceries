@@ -15,13 +15,13 @@ public struct GroceryCategory: Identifiable {
 
 
 public let groceryCategories = [
-    GroceryCategory(id: "1", name: "Veggies", image: "strawberry"),
+    GroceryCategory(id: "1", name: "Veggies", image: "corn"),
     GroceryCategory(id: "2", name: "Fruits", image: "pear"),
-    GroceryCategory(id: "3", name: "Meat", image: "blueberry"),
-    GroceryCategory(id: "4", name: "Fish", image: "watermellon"),
+    GroceryCategory(id: "3", name: "Meat", image: "cherry"),
+    GroceryCategory(id: "4", name: "Fish", image: "watermelon"),
     GroceryCategory(id: "5", name: "Dairy & Eggs", image: "mango"),
     GroceryCategory(id: "6", name: "Bakery", image: "lime"),
     GroceryCategory(id: "7", name: "Frozen", image: "gooseberry"),
     GroceryCategory(id: "9", name: "Beverages", image: "cherry"),
-    GroceryCategory(id: "10", name: "Snacks", image: "apple")
+    GroceryCategory(id: "10", name: "Snacks", image: "fruitloops")
 ]
