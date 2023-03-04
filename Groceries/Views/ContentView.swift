@@ -12,7 +12,6 @@ struct ContentView: View {
         VStack {
             CustomNavBar()
             CategoryGridView(categoryItem: groceryCategories)
-            Spacer()
             GroceryGridView()
 
         }
