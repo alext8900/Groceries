@@ -13,14 +13,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             CustomNavBar()
-            CategoryGridView(selectedCategory: $selectedCategory, categoryItem: groceryCategories)
-            GroceryGridView(groceryItems: ContentView.groceryItems, selectedCategory: selectedCategory)
+            CategoryGridView(selectedCategory: $selectedCategory, categories: groceryCategories)
+            GroceryGridView(groceryItems: ContentView.groceryItems, selectedCategory: $selectedCategory)
 
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

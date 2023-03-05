@@ -11,12 +11,16 @@ struct CategoryItemView: View {
     let categoryImage: String
     let categoryName: String
     let action: () -> Void
+    let category: GroceryCategory?
     
     @Binding var selectedCategory: GroceryCategory?
     
     var body: some View {
         Button(action: {
-            self.selectedCategory = GroceryCategory(id: "3", name: categoryName, image: categoryImage)
+            self.selectedCategory = category
+            print("Selected category ID: \(String(describing: selectedCategory?.id))")
+            print("Category ID: \(String(describing: category?.id))")
+            print(selectedCategory?.name ?? "")
             print(categoryName)
         }) {
             HStack(spacing: 8) {
@@ -32,7 +36,7 @@ struct CategoryItemView: View {
             }
             .padding(.vertical, 3)
             .padding(.horizontal, 1)
-            .background(selectedCategory?.name == categoryName ? Color.blue : Color.gray.opacity(0.3))
+            .background(category?.name == selectedCategory?.name ? Color.blue : Color.gray.opacity(0.3))
             .foregroundColor(.black)
             .clipShape(Capsule())
         }
@@ -41,9 +45,9 @@ struct CategoryItemView: View {
 
 //struct CategoryItemView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        CategoryItemView(categoryImage: "Apple", categoryName: "Produce", action: {
+//        CategoryItemView(categoryImage: "apple", categoryName: "Produce", action: {
 //            
-//        }, selectedCategory: .constant("Produce"))
+//        }, selectedCategory: .constant(nil))
 //            .previewLayout(.sizeThatFits)
 //            .padding()
 //    }

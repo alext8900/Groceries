@@ -7,10 +7,14 @@
 
 import Foundation
 
-public struct GroceryCategory: Identifiable, Equatable {
+public struct GroceryCategory: Identifiable, Equatable, Hashable {
     public let id: String
     let name: String
     let image: String
+    
+    public static func == (lhs: GroceryCategory, rhs: GroceryCategory) -> Bool {
+        return lhs.name == rhs.name
+    }
 }
 
 

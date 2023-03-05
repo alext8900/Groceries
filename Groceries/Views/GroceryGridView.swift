@@ -12,14 +12,16 @@ import Combine
 
 struct GroceryGridView: View {
     let groceryItems: [GroceryItem]
-    @State var selectedCategory: GroceryCategory?
+    @Binding var selectedCategory: GroceryCategory?
 
     @ObservedObject var viewModel = GroceryViewModel()
     
     var body: some View {
+        print("Selected category: \(selectedCategory?.name ?? "")")
+        print("Grocery items: \(viewModel.groceryItems.count)")
         return ScrollView(showsIndicators: false) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 30) {
-                ForEach(groceryItems.filter { $0.groceryCategory == selectedCategory?.name }) { item in
+                ForEach(viewModel.groceryItems.filter { $0.groceryCategory == selectedCategory?.name ?? "Produce"}, id: \.id) { item in
                     GroceryItemView(groceryItem: item, diameter: 125)
                 }
             }
@@ -28,12 +30,13 @@ struct GroceryGridView: View {
     }
 }
 
-struct GroceryGridView_Previews: PreviewProvider {
-    static let groceryItems: [GroceryItem] = []
-    static var previews: some View {
-        GroceryGridView(groceryItems: groceryItems)
-        GroceryGridView(groceryItems: groceryItems)
-            .preferredColorScheme(.dark)
-    }
-}
-
+//struct GroceryGridView_Previews: PreviewProvider {
+//    static let groceryItems: [GroceryItem] = []
+//    @State static var selectedCategory: GroceryCategory?
+//    static var previews: some View {
+//        GroceryGridView(groceryItems: groceryItems, selectedCategory: $selectedCategory)
+//        GroceryGridView(groceryItems: groceryItems, selectedCategory: $selectedCategory)
+//            .preferredColorScheme(.dark)
+//    }
+//}
+//
