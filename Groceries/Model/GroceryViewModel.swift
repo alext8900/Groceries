@@ -30,6 +30,7 @@ struct GroceryItem: Identifiable, Codable {
     let name: String
     let image: String
     let groceryCategory: String
+    
 }
 
 struct JsonData: Decodable {
