@@ -7,14 +7,34 @@
 
 import SwiftUI
 struct DashboardView: View {
+    @State private var selection = 0
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                NavigationLink(destination: ContentView()) {
-                    Text("Go to First View")
+            VStack {
+                Text("Dashboard")
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .padding()
+                Spacer()
+                NavigationLink(destination: GroceryView()) {
+                    Text("Groceries")
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
                 }
+                NavigationLink(destination: Text("Placeholder")) {
+                    Text("Placeholder")
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                Spacer()
             }
-            .navigationBarTitle("Dashboard")
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }
     }
