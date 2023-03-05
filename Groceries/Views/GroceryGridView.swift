@@ -11,14 +11,15 @@ import Combine
 
 
 struct GroceryGridView: View {
-
+    let groceryItems: [GroceryItem]
+    @Binding var selectedCategory: GroceryCategory?
     @ObservedObject var viewModel = GroceryViewModel()
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
+        return ScrollView(showsIndicators: false) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 30) {
-                ForEach(viewModel.groceryItems) { item in
-                    GroceryItemView(groceryItem: GroceryItem(id: item.id, name: item.name, image: item.image, groceryCategory: item.groceryCategory))
+                ForEach(viewModel.groceryItems.filter { $0.groceryCategory == selectedCategory?.name ?? "Produce"}, id: \.id) { item in
+                    GroceryItemView(groceryItem: item, diameter: 125)
                 }
             }
             .padding(7)
@@ -27,8 +28,12 @@ struct GroceryGridView: View {
 }
 
 struct GroceryGridView_Previews: PreviewProvider {
+    static let groceryItems: [GroceryItem] = []
+    @State static var selectedCategory: GroceryCategory?
     static var previews: some View {
-        GroceryGridView()
+        GroceryGridView(groceryItems: groceryItems, selectedCategory: $selectedCategory)
+        GroceryGridView(groceryItems: groceryItems, selectedCategory: $selectedCategory)
+            .preferredColorScheme(.dark)
     }
 }
 

@@ -11,9 +11,14 @@ struct CategoryItemView: View {
     let categoryImage: String
     let categoryName: String
     let action: () -> Void
-
+    let category: GroceryCategory?
+    
+    @Binding var selectedCategory: GroceryCategory?
+    
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            self.selectedCategory = category
+        }) {
             HStack(spacing: 8) {
                 Image(categoryImage)
                     .resizable()
@@ -23,20 +28,22 @@ struct CategoryItemView: View {
                 Text(categoryName)
                     .font(.headline)
                     .padding(.trailing, 13)
-            
+                
             }
             .padding(.vertical, 3)
             .padding(.horizontal, 1)
-            .background(Color.gray.opacity(0.5))
+            .background(selectedCategory == category ? Color.blue : Color.gray.opacity(0.3))
             .foregroundColor(.black)
-        .clipShape(Capsule())
+            .clipShape(Capsule())
         }
     }
 }
 
 struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItemView(categoryImage: "strawberry", categoryName: "Fruits", action: {print("Button Tapped")})
+        CategoryItemView(categoryImage: "apple", categoryName: "Produce", action: {
+            
+        }, category: nil, selectedCategory: .constant(nil))
             .previewLayout(.sizeThatFits)
             .padding()
     }
