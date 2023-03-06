@@ -16,7 +16,7 @@ struct GroceryGridView: View {
     @ObservedObject var viewModel = GroceryViewModel()
     
     var body: some View {
-        return ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: false) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 30) {
                 ForEach(viewModel.groceryItems.filter { $0.groceryCategory == selectedCategory?.name ?? "Produce"}, id: \.id) { item in
                     GroceryItemView(groceryItem: item, diameter: 125)

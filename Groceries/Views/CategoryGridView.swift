@@ -21,12 +21,12 @@ struct CategoryGridView: View {
                         DispatchQueue.main.async {
                             selectedCategory = category
                         }
-                    }, category: category, selectedCategory: $selectedCategory)
+                    }, category: category, selectedCategory: $selectedCategory, diameter: 125)
                 }
             }
             .padding(.horizontal)
         }
-        .frame(height: 40)
+        .frame(height: 58)
     }
 }
 
