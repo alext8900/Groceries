@@ -8,39 +8,34 @@
 import SwiftUI
 struct DashboardView: View {
     var body: some View {
+        let groceriesCard = CardView(imageName: "cart", title: "Groceries", backgroundColor: Color.blue, destination: AnyView(GroceryView()))
+        let stockCard = CardView(imageName: "tray.and.arrow.up", title: "Stock", backgroundColor: Color.green, destination: AnyView(Text("Hello")))
+        let groceryListsCard = CardView(imageName: "list.bullet", title: "Grocery Lists", backgroundColor: Color.purple, destination: AnyView(Text("Grocery Lists")))
+        let settingsCard = CardView(imageName: "gear", title: "Settings", backgroundColor: Color.orange, destination: AnyView(Text("Settings")))
+        let profileCard = CardView(imageName: "person", title: "Profile", backgroundColor: Color.red, destination: AnyView(Text("Profile")))
+        let cards = [groceriesCard, stockCard, groceryListsCard, settingsCard, profileCard]
         NavigationView {
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Dashboard")
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .padding()
-                Spacer()
-                NavigationLink(destination: GroceryView()) {
-                    Text("Groceries")
-                        .font(.headline)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                    .font(.system(size: 30, weight: .semibold, design: .rounded))
+                    .padding(10)
+                ScrollView(showsIndicators: false) {
+                    ForEach(cards, id: \.title) { card in
+                        card
+                    }
                 }
-                NavigationLink(destination: Text("Placeholder")) {
-                    Text("Placeholder")
-                        .font(.headline)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                Spacer()
             }
             .navigationBarTitle("")
-            .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }
 
+
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
+        DashboardView().preferredColorScheme(.dark)
     }
 }

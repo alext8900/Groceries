@@ -21,6 +21,7 @@
 		D5773F3B29B2D05E000FB8A2 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */; };
 		D57D66F029B519FB0031B219 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66EF29B519FB0031B219 /* DashboardView.swift */; };
 		D57D66F229B51B0E0031B219 /* GroceryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F129B51B0E0031B219 /* GroceryView.swift */; };
+		D57D66F429B5ABA30031B219 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F329B5ABA30031B219 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		D57D66EF29B519FB0031B219 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D57D66F129B51B0E0031B219 /* GroceryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryView.swift; sourceTree = "<group>"; };
+		D57D66F329B5ABA30031B219 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				D5773F1929B2AADD000FB8A2 /* ContentView.swift */,
 				D57D66EF29B519FB0031B219 /* DashboardView.swift */,
+				D57D66F329B5ABA30031B219 /* CardView.swift */,
 				D57D66F129B51B0E0031B219 /* GroceryView.swift */,
 				D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */,
 				D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */,
@@ -202,6 +205,7 @@
 				D5773F3B29B2D05E000FB8A2 /* CategoryGridView.swift in Sources */,
 				D57D66F029B519FB0031B219 /* DashboardView.swift in Sources */,
 				D5773F2C29B2AB96000FB8A2 /* CategoryItemView.swift in Sources */,
+				D57D66F429B5ABA30031B219 /* CardView.swift in Sources */,
 				D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
