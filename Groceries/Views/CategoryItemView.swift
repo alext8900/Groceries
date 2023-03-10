@@ -22,7 +22,6 @@ struct CategoryItemView: View {
         }) {
             ZStack {
                 Capsule()
-//                    .fill(colorScheme == .dark ? Color.white.opacity(0.1) : Color.gray.opacity(0.1))
                     .fill(selectedCategory == category ? Color.blue : Color.gray.opacity(0.1))
                     .frame(width: 150, height: 43)
                     .overlay(
@@ -49,10 +48,8 @@ struct CategoryItemView: View {
                 }
                 .padding(.vertical, 3)
                 .padding(.horizontal, 1)
-//                .background(selectedCategory == category ? Color.blue : Color.gray.opacity(0.3))
                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
             }
-//            .clipShape(Capsule())
         }
     }
     @Environment(\.colorScheme) var colorScheme
