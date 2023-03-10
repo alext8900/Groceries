@@ -22,6 +22,8 @@
 		D57D66F029B519FB0031B219 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66EF29B519FB0031B219 /* DashboardView.swift */; };
 		D57D66F229B51B0E0031B219 /* GroceryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F129B51B0E0031B219 /* GroceryView.swift */; };
 		D57D66F429B5ABA30031B219 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F329B5ABA30031B219 /* CardView.swift */; };
+		D57D66F629B6E21E0031B219 /* DashboardCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F529B6E21E0031B219 /* DashboardCircleView.swift */; };
+		D57D66F829B6E3670031B219 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D66F729B6E3670031B219 /* BasketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		D57D66EF29B519FB0031B219 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D57D66F129B51B0E0031B219 /* GroceryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryView.swift; sourceTree = "<group>"; };
 		D57D66F329B5ABA30031B219 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D57D66F529B6E21E0031B219 /* DashboardCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCircleView.swift; sourceTree = "<group>"; };
+		D57D66F729B6E3670031B219 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				D57D66EF29B519FB0031B219 /* DashboardView.swift */,
 				D57D66F329B5ABA30031B219 /* CardView.swift */,
 				D57D66F129B51B0E0031B219 /* GroceryView.swift */,
+				D57D66F529B6E21E0031B219 /* DashboardCircleView.swift */,
+				D57D66F729B6E3670031B219 /* BasketView.swift */,
 				D5773F3829B2BBD4000FB8A2 /* GroceryItemView.swift */,
 				D5773F2D29B2ABCC000FB8A2 /* GroceryGridView.swift */,
 				D5773F3A29B2D05E000FB8A2 /* CategoryGridView.swift */,
@@ -201,11 +207,13 @@
 				D5773F2E29B2ABCC000FB8A2 /* GroceryGridView.swift in Sources */,
 				D5773F2A29B2AB55000FB8A2 /* CustomNavBar.swift in Sources */,
 				D57D66F229B51B0E0031B219 /* GroceryView.swift in Sources */,
+				D57D66F629B6E21E0031B219 /* DashboardCircleView.swift in Sources */,
 				D5773F2829B2AB40000FB8A2 /* GroceryCategories.swift in Sources */,
 				D5773F3B29B2D05E000FB8A2 /* CategoryGridView.swift in Sources */,
 				D57D66F029B519FB0031B219 /* DashboardView.swift in Sources */,
 				D5773F2C29B2AB96000FB8A2 /* CategoryItemView.swift in Sources */,
 				D57D66F429B5ABA30031B219 /* CardView.swift in Sources */,
+				D57D66F829B6E3670031B219 /* BasketView.swift in Sources */,
 				D5773F3929B2BBD4000FB8A2 /* GroceryItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
